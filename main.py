@@ -6,7 +6,9 @@
 
 def find_anagrams(word1, word2):
     word1 = word1.lower()
+    word1 = word1.replace(" ", "")
     word2 = word2.lower()
+    word2 = word2.replace(" ", "")
 
     # Check if the length of each word is the same
     if (len(word1) == len(word2)):
